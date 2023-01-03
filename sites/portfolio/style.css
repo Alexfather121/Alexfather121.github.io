@@ -124,6 +124,7 @@ line-height: 4em;
 		font-size: 100%;
 		background:aquamarine;
 		width: 100%;
+		margin: 0 auto;
 	}
 		.main__list{
 			position: relative;
