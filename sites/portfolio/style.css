@@ -123,6 +123,7 @@ line-height: 4em;
 .body{
 		font-size: 100%;
 		background:aquamarine;
+		width: 100%;
 	}
 		.main__list{
 			position: relative;
@@ -167,6 +168,4 @@ line-height: 4em;
 			margin: 5px 1rem;
 			line-height: 4rem;
 		}
-	}
-
 	}
