@@ -5,11 +5,12 @@
 	margin:0;
 	padding: 0;
 }
+@media (min-width:800px){
 .body{
 	font-size: 100%;
-	margin: 0 auto;
-	max-width: 1200px;
 	min-width: 800px;
+	max-width: 1200px;
+	margin: 0 auto;
 	background: repeating-conic-gradient(at 5% 5%, transparent 0%, aqua 2%, yellow 4%) top left no-repeat,
 					repeating-conic-gradient(at 30% 30%, yellow 0%, transparent 7%, yellow 6%) top left no-repeat;
 	background-size: 100% 100%, 100% 100%;
@@ -27,6 +28,7 @@ padding-bottom: 5rem;
 	overflow: hidden;
 	text-align: center;
 }
+	
 header{
 	position: relative;
 	background: url('data:image/svg+xml,<?xml version="1.0" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" version="1.1"><polyline points="0,0 100,0 100,100 0,100 0,10 90,10 90,90 10,90 10,20 80,20 80,80 20,80 20,30 70,30 70,70 30,70 30,40 60,40 60,60 40,60 40,50 50,50" fill="none" stroke-linecap="round" stroke-width="3" stroke="rgb(249,201,139)"/></svg>') repeat-x,
@@ -61,3 +63,58 @@ h1{
 	margin: 1em 1rem;
 line-height: 4em;
 }
+}
+
+@media (max-width: 799px) {
+	.body{
+		font-size: 100%;
+		width: calc( 100% - 20px);
+		margin: 0 auto;
+		background:aquamarine;
+	}
+		.main__list{
+			position: relative;
+			top: 0;
+			background-color: white;
+			width: 100%;
+			border: 1rem double rgb(136,30,66);
+			overflow: hidden;
+			text-align: center;
+		}
+		header{
+			position: relative;
+			background: url('data:image/svg+xml,<?xml version="1.0" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" version="1.1"><polyline points="0,0 100,0 100,100 0,100 0,10 90,10 90,90 10,90 10,20 80,20 80,80 20,80 20,30 70,30 70,70 30,70 30,40 60,40 60,60 40,60 40,50 50,50" fill="none" stroke-linecap="round" stroke-width="3" stroke="rgb(249,201,139)"/></svg>') repeat-x,
+			url('data:image/svg+xml,<?xml version="1.0" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" version="1.1"><polyline points="0,0 100,0 100,100 0,100 0,10 90,10 90,90 10,90 10,20 80,20 80,80 20,80 20,30 70,30 70,70 30,70 30,40 60,40 60,60 40,60 40,50 50,50" fill="none" stroke-linecap="round" stroke-width="3" stroke="rgb(249,201,139)"/></svg>') repeat-y
+				rgb(136,30,66);
+			background-size: 6.3em 6.3em;
+			width: 100%;
+			height: 18.9em;
+			border-radius: 2em 2em 0 0;
+			top:1em;
+		}
+		@font-face {
+			font-family: Marck-script;
+			src: url(fonts/MarckScript-Regular.ttf);
+		}
+		h1{
+			font-family: Marck-script;
+			font-size: 4.5em;
+			color: rgb(249,201,139);
+			position: absolute;
+			top: 8rem;
+			left: calc(5rem + 5%*(2));
+			text-shadow: 0.2em 0.2em 0.2em black;
+		}
+		.sites img { 
+			width: 8em;
+			border: 1em solid silver;
+			border-radius: 0.3em;
+			outline: 0.4em solid slategrey;
+		}
+		.sites{
+			position:relative;
+			top: 1rem;
+			margin: 5px 1rem;
+			line-height: 4rem;
+		}
+	}
