@@ -133,6 +133,8 @@ color: white;
     top: 5.6rem;
     left: 6.5rem;
     line-height: 4.8rem;
+    width: 1000px;
+    display: inline-block;
 }
 .headder_nav_button{
     width: 190px;
