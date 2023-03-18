@@ -14,11 +14,9 @@
 	background: repeating-conic-gradient(at 5% 5%, transparent 0%, aqua 2%, yellow 4%) top left no-repeat,
 					repeating-conic-gradient(at 30% 30%, yellow 0%, transparent 7%, yellow 6%) top left no-repeat;
 	background-size: 100% 100%, 100% 100%;
-padding-bottom: 5rem;
 }
 .main__list{
 	position: relative;
-	top: 2em;
 	min-width: 800px;
 	max-width: 1200px;
 	margin: 0 auto;
@@ -38,7 +36,6 @@ header{
 	width: 100%;
 	height: 25.2em;
 	border-radius: 4em 4em 0 0;
-	top: 2em;
 }
 @font-face {
 	font-family: Marck-script;
@@ -68,7 +65,8 @@ line-height: 4em;
 @media (min-width:500px) and (max-width: 799px) {
 	.body{
 		font-size: 100%;
-		width: calc( 100% - 20px);
+		width: 100%;
+		height: auto;
 		margin: 0 auto;
 		background:aquamarine;
 	}
@@ -90,7 +88,6 @@ line-height: 4em;
 			width: 100%;
 			height: 18.9em;
 			border-radius: 2em 2em 0 0;
-			top:1em;
 		}
 		@font-face {
 			font-family: Marck-script;
@@ -128,7 +125,6 @@ line-height: 4em;
 	}
 		.main__list{
 			position: relative;
-			top: 0;
 			background-color: white;
 			width: 100%;
 			border: .5rem double rgb(136,30,66);
@@ -138,14 +134,15 @@ line-height: 4em;
 		}
 		header{
 			position: relative;
-			margin: 0 auto;
-			background: rgb(136,30,66);
+			background: url('data:image/svg+xml,<?xml version="1.0" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" version="1.1"><polyline points="0,0 100,0 100,100 0,100 0,10 90,10 90,90 10,90 10,20 80,20 80,80 20,80 20,30 70,30 70,70 30,70 30,40 60,40 60,60 40,60 40,50 50,50" fill="none" stroke-linecap="round" stroke-width="3" stroke="rgb(249,201,139)" preserveAspectRatio="none"/></svg>') repeat-x,
+				url('data:image/svg+xml,<?xml version="1.0" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" version="1.1"><polyline points="0,0 100,0 100,100 0,100 0,10 90,10 90,90 10,90 10,20 80,20 80,80 20,80 20,30 70,30 70,70 30,70 30,40 60,40 60,60 40,60 40,50 50,50" fill="none" stroke-linecap="round" stroke-width="3" stroke="rgb(249,201,139)" preserveAspectRatio="none"/></svg>') repeat-y
+					rgb(136,30,66);
+			background-size: 5rem 5rem;
 			width: 100%;
-			height: 9em;
+			height: 15rem;
 			border-radius: 2em 2em 0 0;
-			top: 0.7em;
-			border: .5em dashed rgb(249,201,139);
-		}
+			}
+
 		@font-face {
 			font-family: Marck-script;
 			src: url(fonts/MarckScript-Regular.ttf);
@@ -154,11 +151,11 @@ line-height: 4em;
 			font-family: Marck-script;
 			display: block;
 			width: 10rem;
-			font-size: 2.2em;
+			font-size: 2.5rem;
 			color: rgb(249,201,139);
 			position: relative;
-			top: 2rem;
-			left: 8%;
+			top: 7rem;
+			left: calc(16% + 60px);
 			text-shadow: 0.2em 0.2em 0.2em black;
 		}
 		.sites img { 
