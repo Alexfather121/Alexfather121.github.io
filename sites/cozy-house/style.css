@@ -12,6 +12,7 @@ body{
 	font-size: 100%;
   width: 100%;
   height: auto;
+  overflow-x: hidden;
 }
 /*//////////////////////////////////////////   1920   ////////////////////////////////////////////////////////////////*/
 @media (min-width: 1920px){
@@ -19,6 +20,7 @@ body{
   width: 1920px;
   position: relative;
   margin: 0 auto;
+  overflow-x: hidden;
 }   
 .headder{
   position: relative;
@@ -146,6 +148,7 @@ word-spacing: .3rem;
   height: 900px;
   background-color: #f6f6f6;/*fafafa*/
   padding: 0 10px 0 10px;
+  overflow-x: hidden;
 }
 .main__block__ourfriends_title{
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -510,6 +513,7 @@ color: white;
     height: 850px;
     background-color: #f6f6f6;/*fafafa*/
     padding: 0 10px 0 10px;
+    overflow-x: hidden;
   }
   .main__block__ourfriends_title{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -760,6 +764,7 @@ color: white;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
+    overflow-x: hidden;
 }   
 #menu__toggle, .menu__btn{
   display: none;
@@ -844,6 +849,7 @@ color: white;
     height: 500px;
     background-color: #fafafa;/*fafafa*/
     padding: 0 10px 0 10px;
+    overflow-x: hidden;
   }
   .main__block__about__img{
     display: block;
@@ -876,6 +882,7 @@ color: white;
     background-color: #f6f6f6;/*fafafa*/
     padding: 0 10px 0 10px;
     text-align: center;
+    overflow-x: hidden;
   }
   .main__block__ourfriends_title, .main__block__help__h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -1114,6 +1121,7 @@ display: none;
         width: 100%;
         background-color: rgb(83, 45, 58);
         height: 50px;
+        overflow: hidden;
     }
 
     #menu__toggle {
@@ -1229,6 +1237,7 @@ display: none;
   background-color: #fafafa;/*fafafa*/
   padding: 0 10px 0 10px;
   z-index: 0;
+  overflow: hidden;
 }
 .main__block__about__img{
   display: block;
@@ -1261,6 +1270,7 @@ display: none;
   padding: 10px 10px 10px 10px;
   text-align: center;
   background-image: linear-gradient(white 70%, #f1cdb3 70%, white 80% );
+  overflow-x: hidden;
 }
 .main__block__ourfriends_title, .main__block__help__h2{
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -1384,6 +1394,7 @@ min-width: 150px;
   background-color: #fafafa;/*fafafa*/
   padding: 0;
   text-align: center;
+  overflow: hidden;
 }
 .main__block__help__method{
   position: relative;
@@ -1410,7 +1421,7 @@ margin-bottom: .2rem;
     height: auto;
     background-color: #f6f6f6;/*fafafa*/
     padding: 15px;
-  
+    overflow-x: hidden;
   }
   .main__block__donat-left, .main__block__donat-right{
     display: block;
@@ -1460,6 +1471,7 @@ margin-bottom: .2rem;
     text-decoration: none;
     font-style: normal;
     padding: 30px 30px 55px 30px;
+    overflow-x: hidden;
   }
   .footer__left, .footer__right{
     display: block;
