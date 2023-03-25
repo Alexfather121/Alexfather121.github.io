@@ -41,6 +41,7 @@ function processResult(evt){
     form.addEventListener('submit', (evt) => {
         form.elements[3].innerHTML = '';
         form.elements[2].disabled = true;
+        form.elements[4].innerHTML = '';
         worker = new Worker('12.3.js');
         worker.addEventListener('message', processResult);
         const data = {};
