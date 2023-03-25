@@ -17,7 +17,7 @@
         <form>
             <p>От: <input type="number" min="0" value="1">
             до: <input type="number" min="0" value="100"></p>
-            <p><input type="submit" value="Вычислить"></p>
+            <p><input type="submit" value="Вычислить"><button>Стоп машина</button></p>
             <p><select size="10"></select></p>
         </form>
     </body>
@@ -50,6 +50,10 @@ function processResult(evt){
         evt.preventDefault();
     });
 
+    form.elements[3].addEventListener('click', () => {
+        form.elements[3].disabled = false;
+        form.elements[2].disabled = true;
+        worker.terminate();});
 
 
 </script>
