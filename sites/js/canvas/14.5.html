@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Столбчатая диаграмма</title>
+        <style type="text/css">
+            #draw {
+                display: block;
+                border: 1px dotted grey;
+            }
+        </style>
+        <script type="text/javascript" src="14.5.js"></script>
+        <script src="14.5.js"></script>
+    </head>
+    <body>
+        <h1>Столбчатая диаграмма</h1>
+        <canvas id="draw" width="500" height="200"></canvas>
+    </body>
+</html>
+<script>
+    const draw = document.getElementById('draw');
+    const ctx = draw.getContext('2d');
+
+
+    ctx.font = '20px sans-serif';
+    let iwidth = 0, a, b;
+    for(let i = 0; i < languages.length; ++i){
+        a = ctx.measureText(languages[i][0]).width;
+        if(a > iwidth)
+        iwidth = a;
+    }
+        b = ctx.measureText('100').width + 10;
+
+
+    draw.width = iwidth * languages.length + 5 * (languages.length - 1) + b;
+
+    ctx.font = '20px sans-serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'bottom';
+
+    const iheight = draw.height - 25;
+   
+    ctx.beginPath();
+    const grd = ctx.createLinearGradient(0,0,0,202);
+    const grd2 = ctx.createLinearGradient(0, 0, 300, 0);
+    grd2.addColorStop(0,'black');
+    grd2.addColorStop(1,'black');
+    grd.addColorStop(0,'black');
+    grd.addColorStop(0.8,'blue');
+
+    let xi, yi;
+    for(let i = 0; i < languages.length; ++i){
+        a = iheight * languages[i][1] / 100;
+        xi = i * (iwidth + 5) + b;
+        yi = draw.height - a;
+        ctx.rect(xi, yi, iwidth, a);
+        ctx.fillStyle = grd2;
+        ctx.fillText(languages[i][0], xi + iwidth / 2, yi, iwidth);
+        ctx.fillStyle = grd;
+    }
+    ctx.fill();
+
+/*Вертикальная линия слева*/
+    ctx.beginPath();
+    ctx.moveTo(b - 8, draw.height);
+    ctx.lineTo(b - 8, 0);
+    ctx.lineWidth = 3;
+    ctx.stroke();
+
+/*Вертикальная линия слева*/
+    ctx.beginPath();
+    ctx.lineWidth = 2;
+    ctx.font = '10px sans-serif';
+    ctx.textAlign = 'right';
+
+    for(i = 0; i <= 100; i+=10){
+    ctx.fillStyle = grd2;
+    ctx.moveTo(b - 8, draw.height - i * iheight / 100);
+    ctx.lineTo(0, draw.height - i * iheight / 100);
+    ctx.fillText(i , b - 12, draw.height - i * iheight / 100 - 1, iwidth);
+    }
+    ctx.stroke();
+
+
+
+
+</script>
