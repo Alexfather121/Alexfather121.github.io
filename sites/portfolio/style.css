@@ -5,169 +5,124 @@
 	margin:0;
 	padding: 0;
 }
-@media (min-width:800px){
 .body{
 	font-size: 100%;
-	min-width: 800px;
+	margin: 0 auto;
+	background: #158e79;
+	
+}
+
+/*--------------------------------------------------Main block wrap-------------------------------------------------*/
+
+.body__wrap{
 	max-width: 1200px;
 	margin: 0 auto;
-	background: repeating-conic-gradient(at 5% 5%, transparent 0%, aqua 2%, yellow 4%) top left no-repeat,
-					repeating-conic-gradient(at 30% 30%, yellow 0%, transparent 7%, yellow 6%) top left no-repeat;
-	background-size: 100% 100%, 100% 100%;
+	box-shadow: 1rem 1rem 3rem #000;
+	border-radius: 4em 4em 0 0;
+	
 }
+
+/*--------------------------------------------------Header-------------------------------------------------*/
+
+header{
+	width: 100%;
+	height: 25.2em;
+	border-radius: 4em 4em 0 0;
+	background: linear-gradient(to right, rgb(136,30,66) 0 40%, transparent 70% 100%),
+	repeating-linear-gradient(70deg,rgb(136,30,66) 2px 8.65px, transparent 8.65px 23.3px),
+	repeating-linear-gradient(110deg,rgb(136,30,66) 2px 8.65px, transparent 8.65px 23.3px),
+	repeating-linear-gradient(70deg,rgb(249,201,139) 0 10.65px, transparent 10.65px 21.3px),
+	repeating-linear-gradient(110deg,rgb(249,201,139) 0 10.65px, rgb(136,30,66) 10.65px 21.3px);
+	border-right: 5px solid rgb(249,201,139);
+	border-top: 3px solid rgb(249,201,139);
+	padding: 3rem 1rem 0 10%;
+}
+
+h1{
+	display: inline-block;
+	font-family: Marck-script;
+	font-size: 8em;
+	color: rgb(249,201,139);
+	text-shadow: 0.2em 0.2em 0.2em black;
+	vertical-align: middle;
+}
+
+
 .main__list{
-	position: relative;
-	min-width: 800px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 	max-width: 1200px;
 	margin: 0 auto;
 	background-color: white;
 	border: 1rem double rgb(136,30,66);
 	padding-top: 1.1rem;
-	overflow: hidden;
-	text-align: center;
+	
 }
 	
-header{
-	position: relative;
-	background: url('data:image/svg+xml,<?xml version="1.0" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" version="1.1"><polyline points="0,0 100,0 100,100 0,100 0,10 90,10 90,90 10,90 10,20 80,20 80,80 20,80 20,30 70,30 70,70 30,70 30,40 60,40 60,60 40,60 40,50 50,50" fill="none" stroke-linecap="round" stroke-width="3" stroke="rgb(249,201,139)"/></svg>') repeat-x,
-	url('data:image/svg+xml,<?xml version="1.0" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" version="1.1"><polyline points="0,0 100,0 100,100 0,100 0,10 90,10 90,90 10,90 10,20 80,20 80,80 20,80 20,30 70,30 70,70 30,70 30,40 60,40 60,60 40,60 40,50 50,50" fill="none" stroke-linecap="round" stroke-width="3" stroke="rgb(249,201,139)"/></svg>') repeat-y
-		rgb(136,30,66);
-	background-size: 6.3em 6.3em;
-	width: 100%;
-	height: 25.2em;
-	border-radius: 4em 4em 0 0;
-}
 @font-face {
 	font-family: Marck-script;
 	src: url(fonts/MarckScript-Regular.ttf);
 }
-h1{
-	font-family: Marck-script;
-	font-size: 8em;
-	color: rgb(249,201,139);
-	position: absolute;
-	top: 30%;
-	left: 20%;
-	text-shadow: 0.2em 0.2em 0.2em black;
-}
-.sites img { 
-	width: 15em;
-	border: 1em solid silver;
+
+.main__list__block{
+	text-align: center;
+	flex: 0.2 0.3 250px;
+	margin: 1.6rem 1.2rem;
+	padding: 8px;
+	background: silver;
 	border-radius: 0.7em;
-	outline: 0.4em solid slategrey;
-}
-.sites{
-	margin: 1em 1rem;
-line-height: 4em;
-}
+	border: 0.4em solid slategrey;
 }
 
-@media (min-width:500px) and (max-width: 799px) {
-	.body{
-		font-size: 100%;
-		width: 100%;
-		height: auto;
-		margin: 0 auto;
-		background:aquamarine;
+
+
+.main__list__block > p{
+	text-align: center;
+	font-size: 1.4rem;
+	color: black;
+	font-family: Marck-script;
+	font-weight: 300;
+}
+
+.main__list__block img { 
+	width: 15em;
+	height: 13.5em;
+	border: 1em solid rgb(241, 231, 231);
+	border-radius: 0.7em;
+	margin-bottom: .4em;
+}
+
+.main__list__block > a :hover{
+	border: 1em solid #158e79;
+	box-shadow: 1em .5em .4em black;
+}
+
+/*======================================Mediazaprosi============================================*/
+
+@media (max-width:800px){
+	h1{
+		font-size: 5rem;
 	}
-		.main__list{
-			position: relative;
-			top: 0;
-			background-color: white;
-			width: 100%;
-			border: 1rem double rgb(136,30,66);
-			overflow: hidden;
-			text-align: center;
-		}
-		header{
-			position: relative;
-			background: url('data:image/svg+xml,<?xml version="1.0" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" version="1.1"><polyline points="0,0 100,0 100,100 0,100 0,10 90,10 90,90 10,90 10,20 80,20 80,80 20,80 20,30 70,30 70,70 30,70 30,40 60,40 60,60 40,60 40,50 50,50" fill="none" stroke-linecap="round" stroke-width="3" stroke="rgb(249,201,139)"/></svg>') repeat-x,
-			url('data:image/svg+xml,<?xml version="1.0" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" version="1.1"><polyline points="0,0 100,0 100,100 0,100 0,10 90,10 90,90 10,90 10,20 80,20 80,80 20,80 20,30 70,30 70,70 30,70 30,40 60,40 60,60 40,60 40,50 50,50" fill="none" stroke-linecap="round" stroke-width="3" stroke="rgb(249,201,139)"/></svg>') repeat-y
-				rgb(136,30,66);
-			background-size: 6.3em 6.3em;
-			width: 100%;
-			height: 18.9em;
-			border-radius: 2em 2em 0 0;
-		}
-		@font-face {
-			font-family: Marck-script;
-			src: url(fonts/MarckScript-Regular.ttf);
-		}
-		h1{
-			font-family: Marck-script;
-			font-size: 4.5em;
-			color: rgb(249,201,139);
-			position: absolute;
-			top: 8rem;
-			left: calc(5rem + 5%*(2));
-			text-shadow: 0.2em 0.2em 0.2em black;
-		}
-		.sites img { 
-			width: 8em;
-			border: 1em solid silver;
-			border-radius: 0.3em;
-			outline: 0.4em solid slategrey;
-		}
-		.sites{
-			position:relative;
-			top: 1rem;
-			margin: 5px 1rem;
-			line-height: 4rem;
-		}
+	header{
+		height: 15.75em;
+		border-radius: 2em 2em 0 0;
+	}
+	.body__wrap{
+		border-radius: 2em 2em 0 0;
+	}
+}
+
+@media (max-width:440px){
+	h1{
+		font-size: 3rem;
+	}
+	header{
+		height: 9.45em;
+		border-radius: 2em 2em 0 0;
+	}
+	.body__wrap{
+		border-radius: 1em 1em 0 0;
 	}
 
-	@media (min-width:200px) and (max-width:499px){
-.body{
-		font-size: 100%;
-		background:aquamarine;
-		width: 100%;
-		margin: 0 auto;
-	}
-		.main__list{
-			position: relative;
-			background-color: white;
-			width: 100%;
-			border: .5rem double rgb(136,30,66);
-			overflow: hidden;
-			text-align: center;
-			margin: 0 auto;
-		}
-		header{
-			position: relative;
-			background: url('data:image/svg+xml,<?xml version="1.0" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" version="1.1"><polyline points="0,0 100,0 100,100 0,100 0,10 90,10 90,90 10,90 10,20 80,20 80,80 20,80 20,30 70,30 70,70 30,70 30,40 60,40 60,60 40,60 40,50 50,50" fill="none" stroke-linecap="round" stroke-width="3" stroke="rgb(249,201,139)" preserveAspectRatio="none"/></svg>') repeat-x,
-				url('data:image/svg+xml,<?xml version="1.0" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" version="1.1"><polyline points="0,0 100,0 100,100 0,100 0,10 90,10 90,90 10,90 10,20 80,20 80,80 20,80 20,30 70,30 70,70 30,70 30,40 60,40 60,60 40,60 40,50 50,50" fill="none" stroke-linecap="round" stroke-width="3" stroke="rgb(249,201,139)" preserveAspectRatio="none"/></svg>') repeat-y
-					rgb(136,30,66);
-			background-size: 5rem 5rem;
-			width: 100%;
-			height: 15rem;
-			border-radius: 2em 2em 0 0;
-			}
-
-		@font-face {
-			font-family: Marck-script;
-			src: url(fonts/MarckScript-Regular.ttf);
-		}
-		h1{
-			font-family: Marck-script;
-			display: block;
-			width: 10rem;
-			font-size: 2.5rem;
-			color: rgb(249,201,139);
-			position: relative;
-			top: 7rem;
-			left: calc(16% + 60px);
-			text-shadow: 0.2em 0.2em 0.2em black;
-		}
-		.sites img { 
-			width: 8em;
-			border: 1em solid silver;
-			border-radius: 0.3em;
-			outline: 0.4em solid slategrey;
-		}
-		.sites{
-			position:relative;
-			top: 1rem;
-			margin: 5px 1rem;
-			line-height: 4rem;
-		}
-	}
+}
