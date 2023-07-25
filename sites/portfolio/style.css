@@ -4,11 +4,18 @@
 	box-sizing: border-box;
 	margin:0;
 	padding: 0;
+	--main_color:rgb(19, 97, 79);
 }
+
+
 .body{
 	font-size: 100%;
 	margin: 0 auto;
-	background: #158e79;
+	background: 
+	repeating-linear-gradient(to right,  transparent 0, transparent 8px,  var(--main_color) 8px, var(--main_color) 122px, transparent 122px, transparent 127px),
+	repeating-linear-gradient(180deg,  transparent 0, transparent 8px,  var(--main_color) 8px, var(--main_color) 122px, transparent 122px, transparent 127px),
+	repeating-linear-gradient(180deg,  rgb(249,201,139), rgb(249,201,139) 3px,  transparent 3px, transparent 127px),
+	repeating-linear-gradient(to right,  rgb(249,201,139), rgb(249,201,139) 3px,  var(--main_color) 3px, var(--main_color) 127px); /*background: #158e79;*/
 	
 }
 
