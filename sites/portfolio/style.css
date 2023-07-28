@@ -58,6 +58,8 @@ h1{
 .main__list{
 	display: flex;
 	flex-wrap: wrap;
+	column-gap: 30px;
+	row-gap: 30px;
 	justify-content: space-around;
 	max-width: 1200px;
 	margin: 0 auto;
@@ -74,12 +76,13 @@ h1{
 
 .main__list__block{
 	text-align: center;
-	flex: 0.2 0.3 250px;
-	margin: 1.6rem 1.2rem;
-	padding: 8px;
+	flex: .2 .3 300px;
 	background: silver;
 	border-radius: 0.7em;
 	border: 0.4em solid slategrey;
+	max-width: 330px;
+	margin: 12px;
+	padding: 8px;
 }
 
 
