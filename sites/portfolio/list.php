@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Портфолио</title>
 	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900&display=swap" rel="stylesheet" />
 </head>
 
 <body class="body">
@@ -13,18 +14,36 @@
 	<div class="body__wrap">
 		
 		<header>
-			<h1>Портфолио</h1>
+			<h1 class="h1">Портфолио</h1>
+			<div class="father">
+				<div class="side no1"></div>
+				<div class="side no2"></div>
+				<div class="side no3"></div>
+				<div class="side no4"></div>
+				<div class="side no5"></div>
+				<div class="side no6"></div>
+			</div>
+			<nav class="nav__menu">
+				<ul class="nav__list">
+					<li class="nav__items"><a class="nav__link" href="\">Примеры работ</a></li>
+					<li class="nav__items"><a class="nav__link" href="\contacts">Контакты</a></li>
+					<li class="nav__items"><a class="nav__link" href="\about">Обо мне</a></li>
+				</ul>
+				<div class="header__burger">
+					<span></span>
+				</div>
+			</nav>
 		</header>
 
 		<div class="main__list">
 <div class="main__list__block">
 <a href="https://alexfather121.github.io/sites/DataCloud/index.html" target="_blank"><img
-src="sites/DataCloud.png" alt=""></a><p>Сайт с облачным хранилищем. Использованные технологии (CSS, SASS/SCSS, HTML, Javascript), Gih-hub.</p>
+src="sites/DataCloud.png" alt=""></a><p>Сайт с облачным хранилищем. Использованные технологии (CSS, SASS/SCSS, HTML, Javascript), Git-hub.</p>
 </div>
 
 <div class="main__list__block">
 <a href="https://alexfather121.github.io/sites/yabao/main.html" target="_blank"><img
-src="sites/yabao.png" alt=""></a><p>Интернет-магазин YaBao. Использованные технологии (CSS, SASS/SCSS, HTML, Javascript), Gih-hub.</p>
+src="sites/yabao.png" alt=""></a><p>Интернет-магазин YaBao. Использованные технологии (CSS, SASS/SCSS, HTML, Javascript), Git-hub.</p>
 </div>
 
 <div class="main__list__block">
@@ -68,19 +87,38 @@ src="sites/yabao.png" alt=""></a><p>Интернет-магазин YaBao. Ис�
 </div>
 
 <div class="main__list__block"><a href="https://alexfather121.github.io/sites/portfolio/index.html" target="_blank"><img
-	src="sites/profile.png" alt=""></a><p>Сайт с портфолио. Использованные технологии (CSS, HTML), Gih-hub.</p>
+	src="sites/profile.png" alt=""></a><p>Сайт с портфолио. Использованные технологии (CSS, HTML), Git-hub.</p>
 
 </div>
 
 <div class="main__list__block"><a href="https://alexfather121.github.io/sites/luxbeton/index.html" target="_blank"><img
-	src="sites/lux.png" alt=""></a><p>Сайт с барбекю-комплексами. Использованные технологии (CSS, SASS/SCSS, HTML, Javascript), Gih-hub.</p>
+	src="sites/lux.png" alt=""></a><p>Сайт с барбекю-комплексами. Использованные технологии (CSS, SASS/SCSS, HTML, Javascript), Git-hub.</p>
 
 </div>
 
-<a href="#">Alexfather121.github.io/sites/lager/wp-content/themes/lager</a>
 
 		</div>
 	</div>
+
+<script>
+	let burger = document.getElementsByClassName('header__burger')[0];
+	let nav__list = document.getElementsByClassName('nav__list')[0];
+	let body = document.getElementsByTagName('body')[0];
+
+	burger.addEventListener('click', function(){
+            burger.classList.toggle('active');
+			nav__list.classList.toggle('active');
+        })
+
+	body.addEventListener('click', function(evt){
+		if(evt.target != burger && burger.classList.contains('active')){
+			burger.classList.remove('active');
+			nav__list.classList.remove('active');
+		};
+        })
+
+
+</script>
 
 </body>
 
