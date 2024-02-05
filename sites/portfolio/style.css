@@ -70,6 +70,7 @@ header{
 	grid-template-columns: repeat(auto-fit, minmax(200px, 330px));
 	grid-gap: 2em;
 	max-width: 1200px;
+	min-height: 2227px;
 	margin: 0 auto;
 	background-color: white;
 	border: 1rem double rgb(136,30,66);
@@ -82,6 +83,7 @@ header{
 	border-radius: 0.7em;
 	border: 0.4em solid rgb(80, 121, 161);
 	padding: 38px;
+	max-height: 520px;
 }
 
 .main__list__block > p{
@@ -310,6 +312,39 @@ header{
 }
 
 /*++++==++++++++++++++++++++++++++++++++++Стиль для куба+++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*+++++++++++++++++++++++++++++++++++++++++Стиль для кнопок навигации++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.navigation{
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	padding: 1rem;
+	background-color: white;
+}
+
+.navigation > a{
+	text-decoration: none;
+	font-family: Montserrat, Arial, Helvetica, sans-serif;
+	font-weight: 800;
+	font-size: 2rem;
+	min-width: 5.6rem;
+	color: black;
+}
+
+.navbtn{
+	display: inline-block;
+	padding: 1.8rem;
+	border: 6px double rgb(136,30,66);
+	border-radius: 1rem;
+	margin: 1rem;
+}
+
+.navbtn.active{
+	background-image: linear-gradient(to right top, rgb(249,201,139) 55%, white);
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++Стиль для кнопок навигации++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
 
 @keyframes rotation{
     0%{
