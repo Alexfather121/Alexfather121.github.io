@@ -107,7 +107,7 @@ header{
 .main__list__block img { 
 	width: 15em;
 	height: 15em;
-	border: 1em solid rgb(153, 136, 136);
+	border: 1rem solid rgb(153, 136, 136);
 	border-radius: 0.7em;
 	transition: all .3s linear;
 	text-align: center;
@@ -135,14 +135,14 @@ header{
 	box-sizing: border-box;
 	width: 15em;
 	height: 15em;
-	border: 1em solid rgb(153, 136, 136);
-	border-radius: 3.7rem;
+	border: .5em solid rgb(153, 136, 136);
+	border-radius: 3.3rem;
 	background-color: rgb(153, 136, 136);
 	outline: 3px solid rgb(249,201,139);
 	position: absolute;
 	top: 0;
 	left: 0;
-	transform: rotate(60deg);
+	transform: rotate(60deg) scale(.95);
 	z-index: -1;
 	transition: all .3s linear;
 }
@@ -152,14 +152,14 @@ header{
 	box-sizing: border-box;
 	width: 15em;
 	height: 15em;
-	border: 1em solid rgb(153, 136, 136);
-	border-radius: 3.7rem;
+	border: .5em solid rgb(153, 136, 136);
+	border-radius: 3.3rem;
 	background-color: rgb(153, 136, 136);
 	position: absolute;
 	outline: 3px solid rgb(249,201,139);
 	top: 0;
 	left: 0;
-	transform: rotate(-60deg);
+	transform: rotate(-60deg) scale(.95);
 	transition: all .3s linear;
 	z-index: -1;
 }
@@ -337,10 +337,12 @@ header{
 	border: 6px double rgb(136,30,66);
 	border-radius: 1rem;
 	margin: 1rem;
+	box-shadow: 5px 5px 10px 3px saddlebrown;
 }
 
 .navbtn.active{
 	background-image: linear-gradient(to right top, rgb(249,201,139) 55%, white);
+	box-shadow: none;
 }
 
 /*+++++++++++++++++++++++++++++++++++++++++Стиль для кнопок навигации++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
